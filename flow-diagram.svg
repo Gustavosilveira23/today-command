@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="'Caveat', 'Bradley Hand', 'Segoe Script', cursive">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+    </style>
+    <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" scale="1.2"/>
+    </filter>
+    <filter id="rough2" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="0.9"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 12 6 L 0 12 L 3 6 z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .src-fill { fill: #eff6ff; }
+      .src-stroke { fill: none; stroke: #1f2937; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .src-text { font-size: 22px; fill: #1f2937; text-anchor: start; font-weight: 700; }
+      .src-sub { font-size: 15px; fill: #6b7280; text-anchor: start; }
+
+      .icon-stroke { fill: none; stroke: #1f2937; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-fill { fill: #bfdbfe; }
+
+      .step-fill { fill: #ffffff; }
+      .step-stroke { fill: none; stroke: #1f2937; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .step-num { font-size: 28px; fill: #2563eb; text-anchor: middle; font-weight: 700; }
+      .step-title { font-size: 22px; fill: #1f2937; text-anchor: middle; font-weight: 700; }
+      .step-sub { font-size: 14px; fill: #6b7280; text-anchor: middle; }
+
+      .center-fill { fill: #2563eb; }
+      .center-stroke { fill: none; stroke: #1e3a8a; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .center-title { font-size: 38px; fill: #ffffff; text-anchor: middle; font-weight: 700; }
+      .center-sub { font-size: 16px; fill: #dbeafe; text-anchor: middle; }
+
+      .out-fill { fill: #fffbeb; }
+      .out-stroke { fill: none; stroke: #1f2937; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .out-title { font-size: 26px; fill: #1f2937; text-anchor: middle; font-weight: 700; }
+      .out-line { font-size: 18px; fill: #1f2937; text-anchor: start; font-weight: 700; }
+      .out-sub { font-size: 14px; fill: #6b7280; text-anchor: start; }
+
+      .conn { fill: none; stroke: #1f2937; stroke-width: 1.8; stroke-linecap: round; }
+      .pipe { fill: none; stroke: #1f2937; stroke-width: 2; stroke-linecap: round; }
+      .lane { font-size: 15px; fill: #9ca3af; text-anchor: middle; font-weight: 700; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- ============ LANE LABELS ============ -->
+  <text x="155" y="40" class="lane">SOURCES</text>
+  <text x="600" y="40" class="lane">CLAUDE  /today</text>
+  <text x="1050" y="40" class="lane">OUTPUT</text>
+
+  <!-- ============ SOURCES (left column) ============ -->
+
+  <!-- 1. Google Calendar -->
+  <g filter="url(#rough)">
+    <path d="M 30 65 L 290 63 L 293 130 L 28 132 Z" class="src-fill"/>
+    <path d="M 30 65 L 290 63 L 293 130 L 28 132 Z" class="src-stroke"/>
+  </g>
+  <g filter="url(#rough2)" transform="translate(48,75)">
+    <rect x="0" y="6" width="42" height="38" rx="3" class="icon-fill"/>
+    <rect x="0" y="6" width="42" height="38" rx="3" class="icon-stroke"/>
+    <line x1="0" y1="18" x2="42" y2="18" class="icon-stroke"/>
+    <line x1="10" y1="0" x2="10" y2="12" class="icon-stroke"/>
+    <line x1="32" y1="0" x2="32" y2="12" class="icon-stroke"/>
+    <circle cx="13" cy="30" r="2" fill="#1f2937"/>
+    <circle cx="22" cy="30" r="2" fill="#1f2937"/>
+    <circle cx="31" cy="30" r="2" fill="#1f2937"/>
+    <circle cx="13" cy="38" r="2" fill="#1f2937"/>
+  </g>
+  <text x="105" y="95" class="src-text">Google Calendar</text>
+  <text x="105" y="115" class="src-sub">today's events &amp; meetings</text>
+
+  <!-- 2. Google Tasks -->
+  <g filter="url(#rough)">
+    <path d="M 33 150 L 293 148 L 295 215 L 30 217 Z" class="src-fill"/>
+    <path d="M 33 150 L 293 148 L 295 215 L 30 217 Z" class="src-stroke"/>
+  </g>
+  <g filter="url(#rough2)" transform="translate(50,162)">
+    <rect x="0" y="0" width="40" height="40" rx="3" class="icon-fill"/>
+    <rect x="0" y="0" width="40" height="40" rx="3" class="icon-stroke"/>
+    <path d="M 9 19 L 17 27 L 32 11" class="icon-stroke"/>
+  </g>
+  <text x="105" y="180" class="src-text">Google Tasks</text>
+  <text x="105" y="200" class="src-sub">pending to-dos in lists</text>
+
+  <!-- 3. Notion -->
+  <g filter="url(#rough)">
+    <path d="M 30 235 L 293 233 L 295 300 L 33 302 Z" class="src-fill"/>
+    <path d="M 30 235 L 293 233 L 295 300 L 33 302 Z" class="src-stroke"/>
+  </g>
+  <g filter="url(#rough2)" transform="translate(50,247)">
+    <rect x="0" y="0" width="40" height="40" rx="3" class="icon-fill"/>
+    <rect x="0" y="0" width="40" height="40" rx="3" class="icon-stroke"/>
+    <line x1="9" y1="9" x2="9" y2="31" class="icon-stroke"/>
+    <line x1="9" y1="9" x2="31" y2="31" class="icon-stroke"/>
+    <line x1="31" y1="9" x2="31" y2="31" class="icon-stroke"/>
+  </g>
+  <text x="105" y="265" class="src-text">Notion</text>
+  <text x="105" y="285" class="src-sub">current sprint board</text>
+
+  <!-- 4. Markdown notes -->
+  <g filter="url(#rough)">
+    <path d="M 33 320 L 295 318 L 293 385 L 30 387 Z" class="src-fill"/>
+    <path d="M 33 320 L 295 318 L 293 385 L 30 387 Z" class="src-stroke"/>
+  </g>
+  <g filter="url(#rough2)" transform="translate(50,332)">
+    <path d="M 0 5 L 28 5 L 40 17 L 40 40 L 0 40 Z" class="icon-fill"/>
+    <path d="M 0 5 L 28 5 L 40 17 L 40 40 L 0 40 Z" class="icon-stroke"/>
+    <path d="M 28 5 L 28 17 L 40 17" class="icon-stroke"/>
+    <line x1="7" y1="25" x2="32" y2="25" class="icon-stroke"/>
+    <line x1="7" y1="32" x2="32" y2="32" class="icon-stroke"/>
+  </g>
+  <text x="105" y="350" class="src-text">Markdown notes</text>
+  <text x="105" y="370" class="src-sub">loose to-dos in your vault</text>
+
+  <!-- 5. Curated web -->
+  <g filter="url(#rough)">
+    <path d="M 30 405 L 293 403 L 295 470 L 33 472 Z" class="src-fill"/>
+    <path d="M 30 405 L 293 403 L 295 470 L 33 472 Z" class="src-stroke"/>
+  </g>
+  <g filter="url(#rough2)" transform="translate(50,415)">
+    <circle cx="20" cy="22" r="18" class="icon-fill"/>
+    <circle cx="20" cy="22" r="18" class="icon-stroke"/>
+    <ellipse cx="20" cy="22" rx="9" ry="18" class="icon-stroke"/>
+    <line x1="2" y1="22" x2="38" y2="22" class="icon-stroke"/>
+  </g>
+  <text x="105" y="435" class="src-text">Curated web</text>
+  <text x="105" y="455" class="src-sub">people you follow online</text>
+
+  <!-- ============ CONNECTORS sources -> pipeline ============ -->
+  <g filter="url(#rough2)">
+    <path d="M 295 95  C 350 95,  390 200, 440 230" class="conn" marker-end="url(#arrow)"/>
+    <path d="M 297 180 C 360 180, 400 215, 440 240" class="conn" marker-end="url(#arrow)"/>
+    <path d="M 297 265 C 360 265, 405 260, 440 255" class="conn" marker-end="url(#arrow)"/>
+    <path d="M 295 350 C 360 350, 405 290, 442 270" class="conn" marker-end="url(#arrow)"/>
+    <path d="M 295 435 C 365 435, 410 320, 442 285" class="conn" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ============ CLAUDE PIPELINE (center) ============ -->
+
+  <!-- Big background blob behind pipeline -->
+  <g filter="url(#rough)" opacity="0.15">
+    <path d="M 440 105
+             C 420 80, 460 55, 510 65
+             C 600 50, 720 55, 770 80
+             C 820 70, 855 110, 840 150
+             C 855 240, 855 370, 830 440
+             C 845 480, 800 510, 760 495
+             C 680 515, 570 515, 500 495
+             C 450 510, 415 470, 430 430
+             C 405 350, 410 220, 425 150
+             C 410 130, 415 100, 440 105 Z" class="center-fill"/>
+  </g>
+
+  <!-- Pipeline label / title -->
+  <text x="635" y="80" class="center-title" fill="#1e3a8a">Claude</text>
+
+  <!-- Step 1: Fetch -->
+  <g filter="url(#rough)">
+    <rect x="455" y="115" width="380" height="80" rx="8" class="step-fill"/>
+    <rect x="455" y="115" width="380" height="80" rx="8" class="step-stroke"/>
+  </g>
+  <text x="490" y="160" class="step-num">1</text>
+  <text x="660" y="148" class="step-title">Fetch everything</text>
+  <text x="660" y="172" class="step-sub">pulls events, tasks, sprint, notes, links</text>
+
+  <!-- arrow 1 -> 2 -->
+  <g filter="url(#rough2)">
+    <path d="M 645 200 L 645 220" class="pipe" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Step 2: Filter & prioritize -->
+  <g filter="url(#rough)">
+    <rect x="455" y="225" width="380" height="80" rx="8" class="step-fill"/>
+    <rect x="455" y="225" width="380" height="80" rx="8" class="step-stroke"/>
+  </g>
+  <text x="490" y="270" class="step-num">2</text>
+  <text x="660" y="258" class="step-title">Filter &amp; pick the top 3</text>
+  <text x="660" y="282" class="step-sub">cuts noise, keeps what matters today</text>
+
+  <!-- arrow 2 -> 3 -->
+  <g filter="url(#rough2)">
+    <path d="M 645 310 L 645 330" class="pipe" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Step 3: Structure -->
+  <g filter="url(#rough)">
+    <rect x="455" y="335" width="380" height="80" rx="8" class="step-fill"/>
+    <rect x="455" y="335" width="380" height="80" rx="8" class="step-stroke"/>
+  </g>
+  <text x="490" y="380" class="step-num">3</text>
+  <text x="660" y="368" class="step-title">Build blocks with intention</text>
+  <text x="660" y="392" class="step-sub">time blocks, prep notes, escape hatch</text>
+
+  <!-- arrow 3 -> 4 -->
+  <g filter="url(#rough2)">
+    <path d="M 645 420 L 645 440" class="pipe" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Step 4: Write -->
+  <g filter="url(#rough)">
+    <rect x="455" y="445" width="380" height="80" rx="8" class="step-fill"/>
+    <rect x="455" y="445" width="380" height="80" rx="8" class="step-stroke"/>
+  </g>
+  <text x="490" y="490" class="step-num">4</text>
+  <text x="660" y="478" class="step-title">Write the briefing</text>
+  <text x="660" y="502" class="step-sub">markdown, wikilinks, ready for Obsidian</text>
+
+  <!-- ============ CONNECTOR pipeline -> output ============ -->
+  <g filter="url(#rough2)">
+    <path d="M 837 485 C 870 485, 895 350, 905 290" class="conn" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ============ OUTPUT (right column) ============ -->
+  <g filter="url(#rough)">
+    <path d="M 905 65 L 1180 63 L 1175 555 L 900 558 Z" class="out-fill"/>
+    <path d="M 905 65 L 1180 63 L 1175 555 L 900 558 Z" class="out-stroke"/>
+  </g>
+  <text x="1040" y="105" class="out-title">today.md</text>
+  <line x1="920" y1="120" x2="1160" y2="118" stroke="#1f2937" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <text x="920" y="155" class="out-line">▸ Start here</text>
+  <text x="935" y="175" class="out-sub">one action, right now</text>
+
+  <text x="920" y="210" class="out-line">▸ The 3 for today</text>
+  <text x="935" y="230" class="out-sub">picked priorities</text>
+
+  <text x="920" y="265" class="out-line">▸ Day log</text>
+  <text x="935" y="285" class="out-sub">blocks with intention</text>
+
+  <text x="920" y="320" class="out-line">▸ If you get stuck</text>
+  <text x="935" y="340" class="out-sub">fixed safety net</text>
+
+  <text x="920" y="375" class="out-line">▸ Wrap-up</text>
+  <text x="935" y="395" class="out-sub">checklist to mark</text>
+
+  <text x="920" y="430" class="out-line">▸ Reading of the Day</text>
+  <text x="935" y="450" class="out-sub">3 curated links</text>
+
+  <line x1="920" y1="475" x2="1160" y2="473" stroke="#1f2937" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="1040" y="510" class="out-sub" text-anchor="middle">opens in Obsidian</text>
+  <text x="1040" y="530" class="out-sub" text-anchor="middle">with wikilinks &amp; tags</text>
+</svg>

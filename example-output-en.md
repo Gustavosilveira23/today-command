@@ -2,8 +2,11 @@
 title: Today
 tags: [admin, daily]
 type: daily
+date: 2026-04-08
 updated: 2026-04-08
 ---
+
+> [[daily/2026-04-08|Today's archive]] | [[daily/|History]]
 
 # Wednesday, April 8
 
@@ -17,38 +20,18 @@ updated: 2026-04-08
 - [ ] **Review the [[Client Dashboard]] prototype** — Pedro's feedback came in yesterday, respond by end of day.
 - [ ] **Send the proposal to [[Client Northwind]]** — it's been ready for 2 days, just hit send.
 
-## Day log
+## Today's agenda
 
-- [ ] **09:00–09:45 · Focus block on [[Onboarding v2]]** `focus` `[[Project Atlas]]`
-  - Write the 1-sentence decision. Don't open Slack. Don't open email.
+- **10:00 · [[Discovery - Project Atlas]]** — [[Project Atlas]]
+  - Prep: reread the 1-sentence decision you wrote this morning. Open Figma on the onboarding screen. Bring 1 question: "what's the smallest version we can test with 5 users by the 20th?"
+- **13:30 · [[Daily Project Atlas]]** — [[Project Atlas]]
+  - Prep: yesterday you closed the onboarding scope; today's plan is the dashboard review. No blockers to flag.
 
-- [ ] **09:45–10:00 · Prep for [[Discovery - Project Atlas]]** `prep` `[[Project Atlas]]`
-  - Reread the sentence you wrote. Open Figma on the onboarding screen.
+## Where each project stands
 
-- [ ] **10:00–11:00 · [[Discovery - Project Atlas]]** `meeting` `[[Project Atlas]]`
-  - Meet: meet.google.com/xxx-xxxx-xxx
-  - Bring 1 question: "what's the smallest version we can test with 5 users by the 20th?"
-
-- [ ] **11:00–12:00 · Review [[Client Dashboard]]** `focus` `[[Client Northwind]]`
-  - Read Pedro's comments top to bottom. Respond to 3, max. The rest become tasks.
-
-- [ ] **12:00–13:00 · Lunch** `break`
-  - Get up from the chair for real. Don't eat in front of a screen.
-
-- [ ] **13:00–13:30 · Send proposal [[Client Northwind]]** `focus` `[[Client Northwind]]`
-  - Open the doc, read it once, hit send. If you stall for more than 30min, send it as is.
-
-- [ ] **13:30–14:00 · [[Daily Project Atlas]]** `meeting` `[[Project Atlas]]`
-  - What I closed yesterday: onboarding scope. What I'll do today: review dashboard. Blockers: none.
-
-- [ ] **14:00–16:00 · Focus block on [[Empty State Component]]** `focus` `[[Design System]]`
-  - Medium-energy task. If your head's clear, do it whole. If it's heavy, just sketch the skeleton and mark it as "draft".
-
-- [ ] **16:00–16:30 · Coffee break** `break`
-  - Stand up. Window. Water.
-
-- [ ] **16:30–17:30 · Day wrap-up** `wrap-up`
-  - Update the [[Project Atlas]] board. Reply to the 3 emails left. Close the day by writing tomorrow's first thing.
+- **[[Project Atlas]]**: onboarding scope being locked today, discovery at 10am will validate the 3 MVP screens. Next: ship the doc by EOD.
+- **[[Client Northwind]]**: proposal sitting in draft since Monday, dashboard prototype waiting on your reply. Next: send proposal, respond to Pedro.
+- **[[Design System]]**: Empty State component still on deck, no movement this week. Next: a 1-hour sketch session if today's afternoon clears.
 
 ## If you get stuck
 
@@ -62,7 +45,6 @@ updated: 2026-04-08
 - [ ] [[Onboarding v2]] scope locked and shared
 - [ ] [[Client Dashboard]] feedback responded
 - [ ] [[Client Northwind]] proposal sent
-- [ ] Tomorrow's first thing written
 
 > *Mark what you did. Done > perfect.*
 
@@ -71,5 +53,8 @@ updated: 2026-04-08
 3 curated reads for today (not an obligation, just if curiosity strikes):
 
 - **[Continuous Discovery: Stop Asking About the Past](https://www.producttalk.org/)** (Teresa Torres) — connects directly to the question you're bringing to the 10am discovery.
-- **[Empty States: More Than Just a Placeholder](https://www.nngroup.com/)** (NN/g) — you'll be working on the empty state in the Design System this afternoon, worth 5 minutes before.
+- **[Empty States: More Than Just a Placeholder](https://www.nngroup.com/)** (NN/g) — Design System is paused but the empty state is on deck; 5 minutes here pays off when you pick it up.
 - **[The Brief #142: What changes when product becomes a commodity](https://www.linkedin.com/company/thebriefoficial/)** (The Brief) — coffee read, helps you get out of your day-to-day head.
+
+## Notes
+
